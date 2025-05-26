@@ -1,0 +1,171 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.espaco-sideral {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 20, 1) 10%,
+    rgba(0, 0, 50, 1) 100%
+  );
+  animation: moverEspaco 20s linear infinite;
+}
+
+.espaco-sideral::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://usagif.com/wp-content/uploads/gifs/starfall-gif-46.gif") repeat;
+  opacity: 0.8;
+  animation: estrelasPiscar 3s infinite alternate;
+}
+
+@keyframes estrelasPiscar {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes moverEspaco {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500px -500px;
+  }
+}
+
+.logo img {
+  width: 180px;
+  filter: drop-shadow(0px 0px 10px #ffcc00);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+.catalogo {
+  padding: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.grid-filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.filme {
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.filme img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.filme:hover img {
+  transform: scale(1.1);
+}
+
+.btn-assistir {
+  width: 120px;
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  margin-top: auto;
+}
+
+.btn-assistir:hover {
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}
+.parceiros {
+  text-align: center;
+  font-size: 16px;
+}
+
+.parceiros a {
+  text-decoration: none;
+  color: #fff; 
+  margin: 0 8px; 
+  font-weight: bold;
+}
+
+.parceiros a:hover {
+  color: #ffcc00;
+}
