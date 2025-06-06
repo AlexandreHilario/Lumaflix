@@ -1,16 +1,13 @@
-const botaoWhatapp = document.createElement("button");
-        botaoWhatapp.innerText = "Ir para Whatsapp";
-        botaoWhatapp.style.marintop = "20px";
-        botaoWhatapp.style.padding = "15px";
-        botaoWhatapp.style.fontSize = "16px";
-        botaoWhatapp.onclick = function() {
-            let numero = prompt("Digite seu número com DDD (EX: 81 912345678:" );
-            if (numero) {
-                numero = numero.replace(/\D/g, '');
-                window.open("https://wa.me/55" + numero, "_blank");
-            } else {
-                alert("Você não digitou um número existente, por favor, tente novamente.");      
-            }
-        };
+function enviarWhatsapp(event) {
+  event.preventDefault();
 
-        document.body.appendChild(botaoWhatapp);
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const mensagem = document.getElementById("mensagem").value;
+
+  const texto = `Olá! Me chamo ${nome}. Meu e-mail é ${email}.%0A%0A${mensagem}`;
+  const numero = "5581984630413"; // <-- troque para o número real com DDD e país
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+  window.open(url, "_blank");
+}

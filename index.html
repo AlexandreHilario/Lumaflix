@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LUMAFLIX - Contato</title>
+    <title>LUMAFLIX - Catálogo de Filmes</title>
     <link rel="stylesheet" href="/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
@@ -14,32 +14,25 @@
     <header>
       <div class="espaco-sideral"></div>
       <div class="logo">
-        <a href="/index.html"><img src="/images/lumaflix2-logo.png" alt="LumaFlix" /></a>
+        <img src="/images/lumaflix2-logo.png" alt="LumaFlix" />
       </div>
       <nav>
         <ul>
           <li><a href="/pages/catalogo.html">Catálogo</a></li>
           <li><a href="/pages/sobre.html">Sobre</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="contato">
-        <h2>Entre em contato com a gente</h2>
-        <form id="form-contato" onsubmit="enviarWhatsapp(event)">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
-
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-          <button type="submit">Enviar via WhatsApp</button>
-        </form>
+      <section class="introducao">
+        <h2>Bem-vindo ao LumaFlix!</h2>
+        <p>
+          O <strong>LumaFlix</strong> é uma plataforma dedicada a reunir e apresentar os lançamentos mais quentes do cinema, séries em destaque e produções que estão conquistando o público. Aqui você encontra uma curadoria visual de cartazes, sinopses e avaliações para explorar o melhor do entretenimento, tudo em um só lugar.
+        </p>
+        <p>
+          Nosso objetivo é oferecer uma experiência visual e informativa, conectando cinéfilos aos seus próximos filmes favoritos. Não fazemos streaming, mas te direcionamos para as plataformas onde cada obra está disponível.
+        </p>
       </section>
     </main>
 
@@ -53,8 +46,6 @@
         Todos os direitos reservados para Alexandre Vitor, Ana Clara e Paulo Henrique @.
       </p>
     </footer>
-
     <script src="/script.js"></script>
-    </script>
   </body>
 </html>
