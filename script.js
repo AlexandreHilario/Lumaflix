@@ -6,7 +6,7 @@ function enviarWhatsapp(event) {
   const mensagem = document.getElementById("mensagem").value;
 
   const texto = `Olá! Me chamo ${nome}. Meu e-mail é ${email}.%0A%0A${mensagem}`;
-  const numero = "5581984630413"; // <-- troque para o número real com DDD e país
+  const numero = "5581984630413";
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
   window.open(url, "_blank");
