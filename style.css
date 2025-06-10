@@ -64,6 +64,10 @@ header {
   filter: drop-shadow(0px 0px 10px #ffcc00);
 }
 
+.logo img:hover{
+  filter: drop-shadow(0px 0px 10px #fff);
+}
+
 .introducao {
   max-width: 900px;
   margin: 50px auto;
