@@ -23,12 +23,6 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 20, 1) 10%,
-    rgba(0, 0, 50, 1) 100%
-  );
-  animation: moverEspaco 20s linear infinite;
 }
 
 .espaco-sideral::before {
@@ -37,31 +31,13 @@ header {
   width: 100%;
   height: 100%;
   background: url("https://usagif.com/wp-content/uploads/gifs/starfall-gif-46.gif") repeat;
-  opacity: 0.8;
-  animation: estrelasPiscar 3s infinite alternate;
 }
 
-@keyframes estrelasPiscar {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
-
-@keyframes moverEspaco {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -500px -500px;
-  }
-}
 
 .logo img {
   width: 180px;
   filter: drop-shadow(0px 0px 10px #ffcc00);
+  display: flex;
 }
 
 .logo img:hover{
@@ -167,7 +143,6 @@ footer {
 }
 
 footer a {
-  color: #ffcc00;
   text-decoration: none;
 }
 
